@@ -6,8 +6,8 @@ function Actors() {
   const renderActors = actors.map((actor, index) => {
 
     return (
-      <div key={index} id={actor}>
-        <ul>Actor: {actor}</ul>
+      <div key={index}>
+        <ul>Actor: {actor.name}</ul>
         <ul>Movies:</ul>
         <ul>
           {actor.movies.map((movie, index) => {
